@@ -35,7 +35,7 @@ public class VoiceTranslateService extends Service {
     Transaction mTransaction;
     VoiceListener voiceListener;
 
-    String languageReconginze;
+    String languageRecognize;
     String languageSpeech;
 
     OnTranslateSuccess onTranslateSuccess;
@@ -43,7 +43,7 @@ public class VoiceTranslateService extends Service {
 
     LanguageInfoFactory languageInfoFactory;
 
-    Handler mhander = new Handler(new Handler.Callback() {
+    Handler mHandler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message message) {
 //            showToast((String) message.obj);//翻译后的文字
@@ -61,8 +61,8 @@ public class VoiceTranslateService extends Service {
         languageInfoFactory = new LanguageInfoFactory(context);
     }
 
-    public void recongnizeVoce(String languageReconginze, String languageSpeach) {
-        this.languageReconginze = languageReconginze;
+    public void recognizeVoce(String languageReconginze, String languageSpeach) {
+        this.languageRecognize = languageReconginze;
         this.languageSpeech = languageSpeach;
         mTransaction = mNuanceManager.regcongitionVoice(languageReconginze, voiceListener);
     }
@@ -81,7 +81,7 @@ public class VoiceTranslateService extends Service {
 //            showToast(recognition.getText());//翻译前的文字
             TranslateManager translateManager = new TranslateManager();
             String translateName = languageInfoFactory.getLanguageInfoByNuanceName(languageSpeech).getTranslateName();
-            translateManager.translateString(languageReconginze, translateName, recognition.getText(), new Callback() {
+            translateManager.translateString(languageRecognize, translateName, recognition.getText(), new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
                     e.printStackTrace();
@@ -91,7 +91,7 @@ public class VoiceTranslateService extends Service {
                 public void onResponse(Call call, Response response) throws IOException {
                     Gson gson = new Gson();
                     final String result = (gson.fromJson(response.body().string(), TranslateEntity.class)).getTrans_result().get(0).getDst();
-                    Message message = mhander.obtainMessage();
+                    Message message = mHandler.obtainMessage();
                     message.obj = result;
                     message.sendToTarget();
 

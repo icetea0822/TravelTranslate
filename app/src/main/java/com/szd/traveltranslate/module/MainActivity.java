@@ -100,7 +100,7 @@ public class MainActivity extends BaseAvtivity implements View.OnTouchListener
                 isVoiceServiceConnected = bindService(new Intent(this, VoiceTranslateService.class), serviceConnection, Context.BIND_AUTO_CREATE);
             }
             if (isVoiceServiceConnected && voiceTranslateService != null) {
-                voiceTranslateService.recongnizeVoce(languageFrom, languageTo);
+                voiceTranslateService.recognizeVoce(languageFrom, languageTo);
             }
         }
     }
@@ -112,7 +112,7 @@ public class MainActivity extends BaseAvtivity implements View.OnTouchListener
             VoiceTranslateService.MyBinder myBinder = (VoiceTranslateService.MyBinder) iBinder;
             voiceTranslateService = myBinder.getService();
             voiceTranslateService.init(MainActivity.this);
-            voiceTranslateService.recongnizeVoce(languageReconginze, languageSpeach);
+            voiceTranslateService.recognizeVoce(languageReconginze, languageSpeach);
 
 
             voiceTranslateService.setOnTranslateSuccess(new VoiceTranslateService.OnTranslateSuccess() {
