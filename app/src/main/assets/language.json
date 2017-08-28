@@ -1,0 +1,131 @@
+{
+  "language": [
+    {
+      "name": "中文",
+      "translate": "zh",
+      "nuance": "cmn-CHN",
+      "flag":"flag_zh"
+    },
+    {
+      "name": "英语",
+      "translate": "en",
+      "nuance": "eng-USA",
+      "flag":"flag_en"
+    },
+    {
+      "name": "粤语",
+      "translate": "yue",
+      "nuance": "yue-CHN",
+      "flag":"flag_yue"	
+    },
+    {
+      "name": "日语",
+      "translate": "jp",
+      "nuance": "jpn-JPN",
+      "flag":"flag_jp"
+    },
+    {
+      "name": "韩语",
+      "translate": "kor",
+      "nuance": "kor-KOR",
+      "flag":"flag_kor"
+    },
+    {
+      "name": "法语",
+      "translate": "fra",
+      "nuance": "fra-FRA",
+      "flag":"flag_fra"
+    },
+    {
+      "name": "西班牙语",
+      "translate": "spa",
+      "nuance": "spa-ESP",
+      "flag":"flag_spa"
+    },
+    {
+      "name": "泰语",
+      "translate": "th",
+      "nuance": "tha-THA",
+      "flag":"flag_th"
+    },
+    {
+      "name": "阿拉伯语",
+      "translate": "ara",
+      "nuance": "ara-XWW",
+      "flag":"flag_ara"
+    },
+    {
+      "name": "俄语",
+      "translate": "ru",
+      "nuance": "rus-RUS",
+      "flag":"flag_ru"
+    },
+    {
+      "name": "葡萄牙语",
+      "translate": "pt",
+      "nuance": "por-PRT",
+      "flag":"flag_pt"
+    },
+    {
+      "name": "德语",
+      "translate": "de",
+      "nuance": "deu-DEU",
+      "flag":"flag_de"
+    },
+    {
+      "name": "意大利语",
+      "translate": "it",
+      "nuance": "ita-ITA",
+      "flag":"flag_it"
+    },
+    {
+      "name": "希腊语",
+      "translate": "el",
+      "nuance": "ell-GRC",
+      "flag":"flag_el"
+    },
+    {
+      "name": "荷兰语",
+      "translate": "nl",
+      "nuance": "nld-NLD",
+      "flag":"flag_nl"
+    },
+    {
+      "name": "波兰语",
+      "translate": "pl",
+      "nuance": "pol-POL",
+      "flag":"flag_pl"
+    },
+    {
+      "name": "丹麦语",
+      "translate": "dan",
+      "nuance": "dan-DNK",
+      "flag":"flag_dan"
+    },
+    {
+      "name": "芬兰语",
+      "translate": "fin",
+      "nuance": "fin-FIN",
+      "flag":"flag_fin"
+    },
+    {
+      "name": "捷克语",
+      "translate": "cs",
+      "nuance": "ces-CZE",
+      "flag":"flag_cs"
+    },
+    {
+      "name": "罗马尼亚语",
+      "translate": "rom",
+      "nuance": "ron-ROU",
+      "flag":"flag_rom"
+    },
+    {
+      "name": "瑞典语",
+      "translate": "swe",
+      "nuance": "swe-SWE",
+      "flag":"flag_swe"
+    }
+
+  ]
+}

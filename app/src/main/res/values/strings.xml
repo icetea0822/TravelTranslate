@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">TravelTranslate</string>
+
+    <string name="title_translate">即时翻译</string>
+
+    <string name="translate_from">中文</string>
+    <string name="translate_to">英文</string>
+
+    <string-array name="translate_language">
+        <item>中文</item>
+        <item>英文</item>
+        <item>日文</item>
+    </string-array>
+
+
+    <!--language-->
+    <string name="language_en">英语</string>
+    <string name="language_zh">中文</string>
+    <string name="language_yue">粤语</string>
+    <string name="language_jp">日语</string>
+    <string name="language_kor">韩语</string>
+    <string name="language_fra">法语</string>
+    <string name="language_spa">西班牙语</string>
+    <string name="language_th">泰语</string>
+    <string name="language_ara">阿拉伯语</string>
+    <string name="language_ru">俄语</string>
+    <string name="language_de">德语</string>
+    <string name="language_el">希腊语</string>
+    <string name="language_nl">荷兰语</string>
+    <string name="language_pl">波兰语</string>
+    <string name="language_dan">丹麦语</string>
+    <string name="language_fin">芬兰语</string>
+    <string name="language_cs">捷克语</string>
+    <string name="language_rom">罗马尼亚语</string>
+    <string name="language_slo">斯洛文尼亚语</string>
+    <string name="language_swe">瑞典语</string>
+    <string name="language_hu">匈牙利语</string>
+    <string name="language_cht">繁体中文</string>
+    <string name="language_vie">越南语</string>
+
+
+    <!--Dialog Message-->
+    <string name="dialog_start">开始录音</string>
+    <string name="processing">正在识别中。。</string>
+</resources>
